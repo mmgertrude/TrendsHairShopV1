@@ -1,0 +1,16 @@
+﻿@model HomeViewModel
+
+
+<partial name="_Carousel" />
+
+<h2>Hair Pieces of the week</h2>
+<h4>Our weekly selection - just for you!</h4>
+
+<div class="row">
+
+    @foreach (var hair in Model.HairPiecesofTheWeek)
+    {
+        <partial name="_HairCard" model="hair" />
+    }
+
+</div>

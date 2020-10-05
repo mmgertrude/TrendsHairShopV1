@@ -1,0 +1,8 @@
+
+@model HairPiecesListViewModel
+
+    <h1>@Model.CurrentCategory</h1>
+    @foreach (var hair in Model.HairPieces)
+    {
+        <partial name ="_HairCard" model="hair"/>        
+    }
